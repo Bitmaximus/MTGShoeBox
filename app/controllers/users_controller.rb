@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
   def new
 		@title = "Sign up"
-		#@user = User.new(user_params)
+		@user = User.new
   end
 
   #df user_params(array)

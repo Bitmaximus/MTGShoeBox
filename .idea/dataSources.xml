@@ -5,7 +5,8 @@
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:basic-auth_development</jdbc-url>
-      <user-password>df89dfd1dfefdfe4dffcdff1df8ddffadfe5dff9dffedfeddff8dfefdff9dffbdfe6dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7dfd7</user-password>
+      <user-name>postgres</user-name>
+      <user-password>df96df8fdf97df8adfc8dfcfdfcddfc3dfc4df8adfe3dfe5df84dfd8dfcfdfcbdfcedf82df88dfe9df90df85dfdadfcbdfd9dfd9df84dfc3dfc4dfc3df88df83df8adfd8dfcfdfd9dfc9dfdfdfcfdf8adf88df88df8adfcfdfc4dfcedf8adf8fdf94</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails basic-auth: test" uuid="c9b6e484-639b-4d6c-b2fe-703701c22b1c">
@@ -13,7 +14,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:basic-auth_test</jdbc-url>
       <user-name>postgres</user-name>
-      <user-password>df89dfd1dfefdfe4dffcdff1df8ddffadfe5dff9dffedfeddff8dfefdff9dffbdfe6dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7dfd7</user-password>
+      <user-password>df96df8fdf97df8adfc8dfcfdfcddfc3dfc4df8adfe3dfe5df84dfd8dfcfdfcbdfcedf82df88dfe9df90df85dfdadfcbdfd9dfd9df84dfc3dfc4dfc3df88df83df8adfd8dfcfdfd9dfc9dfdfdfcfdf8adf88df88df8adfcfdfc4dfcedf8adf8fdf94</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails basic-auth: production" uuid="bb7b64ec-fd25-40c9-b744-a46c1ed0f7a7">
@@ -21,7 +22,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:basic-auth_production</jdbc-url>
       <user-name>postgres</user-name>
-      <user-password>df89dfd1dfefdfe4dffcdff1df8ddffadfe5dff9dffedfeddff8dfefdff9dffbdfe6dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7dfd7</user-password>
+      <user-password>df96df8fdf97df8adfc8dfcfdfcddfc3dfc4df8adfe3dfe5df84dfd8dfcfdfcbdfcedf82df88dfe9df90df85dfdadfcbdfd9dfd9df84dfc3dfc4dfc3df88df83df8adfd8dfcfdfd9dfc9dfdfdfcfdf8adf88df88df8adfcfdfc4dfcedf8adf8fdf94</user-password>
       <libraries />
     </data-source>
   </component>

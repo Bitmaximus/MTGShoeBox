@@ -19,6 +19,7 @@ development:
   adapter: postgresql
   encoding: unicode
 
+
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
@@ -54,7 +55,7 @@ test:
   encoding: unicode
   pool: 5
   username: postgres
-  password: "#{ENV['POSTGRESQL_PASSWORD']}"
+  password: <%= begin IO.read("C:/pass.ini") rescue "" end %>
   database: basic-auth_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -82,4 +83,4 @@ production:
   pool: 5
   database: basic-auth_production
   username: postgres
-  password: "#{ENV['POSTGRESQL_PASSWORD']}"
+  password: <%= begin IO.read("C:/pass.ini") rescue "" end %>

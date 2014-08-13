@@ -1,3 +1,0 @@
-Running `User.create!(:name =, :email =, :password =, :password_confirmation =` attached to terminal... up, run.7752
-bash: -c: line 0: syntax error near unexpected token `:name'
-bash: -c: line 0: `User.create!(:name =, :email =, :password =, :password_confirmation ='
