@@ -20,7 +20,6 @@ development:
   encoding: unicode
   pool: 5
   database: basic-auth_development
-  username: postgres
   password: "#{ENV['POSTGRESQL_PASSWORD']}"
 
   # The specified database role being used to connect to postgres.

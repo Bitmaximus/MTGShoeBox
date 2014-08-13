@@ -5,7 +5,6 @@
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:basic-auth_development</jdbc-url>
-      <user-name>postgres</user-name>
       <user-password>df89dfd1dfefdfe4dffcdff1df8ddffadfe5dff9dffedfeddff8dfefdff9dffbdfe6dff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7dfd7</user-password>
       <libraries />
     </data-source>
