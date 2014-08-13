@@ -138,3 +138,7 @@ td.sidebar {
 .main img.gravatar {
     border: 1px solid #999999;
 }
+
+div.field, div.actions {
+    margin-bottom: 10px;
+}
