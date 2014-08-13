@@ -21,7 +21,7 @@ development:
   pool: 5
   database: basic-auth_development
   username: postgres
-  password: Clairenet1
+  password: "#{ENV['POSTGRESQL_PASSWORD']}"
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,7 +58,7 @@ test:
   encoding: unicode
   pool: 5
   username: postgres
-  password: Clairenet1
+  password: "#{ENV['POSTGRESQL_PASSWORD']}"
   database: basic-auth_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -86,4 +86,4 @@ production:
   pool: 5
   database: basic-auth_production
   username: postgres
-  password: Clairenet1
+  password: "#{ENV['POSTGRESQL_PASSWORD']}"
