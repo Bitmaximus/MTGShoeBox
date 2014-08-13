@@ -10,7 +10,13 @@ class UsersController < ApplicationController
 		@user = User.new
   end
 
-  #df user_params(array)
+	def create
+		@user = User.new
+		render 'new'
+	end
+
+
+  #def user_params(array)
 	  #params[array].require(:user).permit(:name, :email)
   #end
 end
