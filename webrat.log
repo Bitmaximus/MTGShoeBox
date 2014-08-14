@@ -669,3 +669,97 @@ D, [2014-08-14T00:55:17.318555 #10632] DEBUG -- : REQUESTING PAGE: POST /users w
 D, [2014-08-14T00:55:17.364575 #10632] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
 D, [2014-08-14T00:55:17.382600 #10632] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
 D, [2014-08-14T00:55:17.668790 #10632] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1204 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-14T01:48:16.031318 #8764] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-14T01:48:16.064341 #8764] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T01:48:16.079352 #8764] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-14T01:48:16.094362 #8764] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-14T01:48:16.110374 #8764] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-14T01:48:16.145398 #8764] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T01:48:16.177421 #8764] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T01:48:16.198436 #8764] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T01:48:16.502650 #8764] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1232 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-14T01:48:16.522664 #8764] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T01:48:16.541678 #8764] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T01:49:31.593550 #448] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T01:49:31.721628 #448] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T01:49:31.754651 #448] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T01:49:31.796681 #448] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T01:49:32.082896 #448] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1244 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-14T01:49:32.190960 #448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-14T01:49:32.206983 #448] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T01:49:32.223995 #448] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-14T01:49:32.266012 #448] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-14T01:49:32.282041 #448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-14T01:49:32.298047 #448] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T01:54:28.091873 #9908] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-14T01:54:28.126898 #9908] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T01:54:28.144910 #9908] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-14T01:54:28.160922 #9908] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-14T01:54:28.195946 #9908] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-14T01:54:28.211959 #9908] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T01:54:47.424560 #52] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-14T01:54:47.442577 #52] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T01:54:47.458584 #52] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-14T01:54:47.495596 #52] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-14T01:54:47.511623 #52] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-14T01:54:47.526618 #52] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T01:54:50.581773 #52] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T01:54:50.623815 #52] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T01:54:50.657839 #52] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T01:54:50.677854 #52] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T01:54:50.984056 #52] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1280 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-14T04:03:11.603661 #11068] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T04:03:11.810805 #11068] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T04:03:12.302153 #11068] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1341 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-14T04:03:12.342181 #11068] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T04:03:12.361194 #11068] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T04:03:12.432245 #11068] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-14T04:03:12.451256 #11068] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T04:03:12.470271 #11068] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-14T04:03:12.513301 #11068] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-14T04:03:12.532326 #11068] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-14T04:03:12.550345 #11068] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T04:50:24.647940 #10896] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-14T04:50:24.663951 #10896] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T04:50:24.682964 #10896] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-14T04:50:24.716987 #10896] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-14T04:50:24.733011 #10896] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-14T04:50:24.749022 #10896] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T04:50:24.791040 #10896] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T04:50:24.810065 #10896] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T04:50:24.838074 #10896] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T04:50:24.884106 #10896] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T04:50:25.169309 #10896] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1380 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-14T04:52:35.835395 #10640] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T04:52:35.973494 #10640] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T04:52:36.035525 #10640] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T04:52:36.057540 #10640] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T04:52:36.352749 #10640] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1381 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-14T04:52:48.597383 #10640] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-14T04:52:48.630406 #10640] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T04:52:48.649432 #10640] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-14T04:52:48.665431 #10640] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-14T04:52:48.702458 #10640] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-14T04:52:48.726474 #10640] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T04:59:35.618684 #9392] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T04:59:35.745776 #9392] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T04:59:35.808821 #9392] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T04:59:35.829835 #9392] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T04:59:36.122042 #9392] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1401 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-14T04:59:36.290161 #9392] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-14T04:59:36.307172 #9392] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T04:59:36.343198 #9392] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-14T04:59:36.360209 #9392] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-14T04:59:36.376221 #9392] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-14T04:59:36.413246 #9392] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T05:06:00.325177 #3500] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T05:06:00.361203 #3500] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T05:06:00.411251 #3500] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-14T05:06:00.430252 #3500] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-14T05:06:00.714452 #3500] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/1440 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-14T05:06:00.841541 #3500] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-14T05:06:00.856551 #3500] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-14T05:06:00.872563 #3500] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-14T05:06:00.888575 #3500] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-14T05:06:00.933616 #3500] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-14T05:06:00.950618 #3500] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
