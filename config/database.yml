@@ -16,8 +16,13 @@
 #
 
 development:
-  adapter: postgresql
-  encoding: unicode
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    database: basic-auth_production
+    username: postgres
+    password: <%= begin IO.read("C:/pass.ini") rescue "" end %>
+
 
 
   # The specified database role being used to connect to postgres.

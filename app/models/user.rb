@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
 	VALID_EMAIL_REGEX = /[\w+.\-]+@[a-z\d\-]+[\.][a-z]+/i
 
 	validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { :case_sensitive => false }
-	validates :password, presence: true, length: { within: 6..40 }, confirmation: true
+	validates :password, presence: true, length: { within: 6..40 }
 
 	def has_password?(submitted_password)
 		self.authenticate(submitted_password)

@@ -38,7 +38,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 group :development, :test do
-gem 'rspec-rails'
+gem "rspec-rails", '~> 2.14.0.rc1'
 gem 'minitest'
 gem 'webrat'
 gem 'capybara'

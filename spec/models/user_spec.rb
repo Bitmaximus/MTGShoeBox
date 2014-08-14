@@ -22,23 +22,19 @@ describe User do
 	user = User.new(@attr)
 	user.should be_valid
   end
-
 	it "should require a name" do
 		no_name_user = User.new(@attr.merge(:name => "" ))
 		no_name_user.should_not be_valid
 	end
-
   it "should require an email address" do
 	  no_email_user = User.new(@attr.merge(:email => ""))
 	  no_email_user.should_not be_valid
   end
-
 	it "should reject names that are too long" do
 		long_name = "a" * 51
 		long_name_user = User.new(@attr.merge(:name => long_name))
 		long_name_user.should_not be_valid
 	end
-
 	it "should accept valid email addresses" do
 		addresses = %w[foor@bar.ca baz.quox@foo.bar.com BAZQUOX@FUBAR.net]
 		addresses.each do |address|
@@ -46,7 +42,6 @@ describe User do
 			valid_email_user.should be_valid
 		end
 		end
-
 	it "should reject invalid email addresses" do
 		addresses = %w[foor@bar,ca user_at_quox.com BAZQUOX@FUBAR. BAZQUOX@FUBAR]
 		addresses.each do |address|
@@ -54,14 +49,12 @@ describe User do
 			invalid_email_user.should_not be_valid
 			end
 	end
-
 	it "should reject duplicate email addresses" do
 		user = User.create!(@attr)
 		duplicate_email_user = User.new(@attr)
 		duplicate_email_user.should_not be_valid
 		user.destroy
 	end
-
 	it "should reject email addresses identical up to case" do
 		downcased_email = @attr[:email].downcase
 		user = User.create!(@attr.merge(:email => downcased_email))
@@ -69,9 +62,7 @@ describe User do
 		duplicate_email_user.should_not be_valid
 		user.destroy
 	end
-
 	describe "passwords" do
-
 		before(:each) do
 			@user = User.new(@attr)
 		end
@@ -82,7 +73,6 @@ describe User do
 			@user.should respond_to(:password_confirmation)
 		end
 	end
-
 	describe "password validations" do
 
 		it "should require a password" do
@@ -171,6 +161,4 @@ describe User do
 		end
 
 	end
-
-
 end

@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails basic-auth: development" uuid="6db874c7-57b1-419f-85e7-9f7872f24172">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:basic-auth_development</jdbc-url>
+      <jdbc-url>jdbc:postgresql:basic-auth_production</jdbc-url>
       <user-name>postgres</user-name>
       <user-password>df96df8fdf97df8adfc8dfcfdfcddfc3dfc4df8adfe3dfe5df84dfd8dfcfdfcbdfcedf82df88dfe9df90df85dfdadfcbdfd9dfd9df84dfc3dfc4dfc3df88df83df8adfd8dfcfdfd9dfc9dfdfdfcfdf8adf88df88df8adfcfdfc4dfcedf8adf8fdf94</user-password>
       <libraries />
