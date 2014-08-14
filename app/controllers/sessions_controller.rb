@@ -4,13 +4,14 @@ class SessionsController < ApplicationController
   end
 
 	def create
-		user = User.verify(params[:session][:email], params[:session][:passwors])
+		user = User.verify(params[:session][:email], params[:session][:password])
 		if user.nil?
 			flash.now[:error] = "Invalid Email/Password Combination"
 			@title = "Sign In"
 			render 'new'
 		else
-			#handle success
+			sign_in user
+			redirect_to user
 		end
 	end
 
