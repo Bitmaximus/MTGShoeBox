@@ -5,10 +5,10 @@ class UsersController < ApplicationController
 		@title = @user.name
 	end
 
-  def new
+	def new
 		@title = "Sign up"
 		@user = User.new
-  end
+	end
 
 	def create
 		@user = User.new(user_params)
@@ -22,8 +22,21 @@ class UsersController < ApplicationController
 
 	end
 
+	def edit
+	@user = User.find(params[:id])
+	@title = 'Edit User'
+	end
 
-  def user_params
-	  params.require(:user).permit(:name, :email, :password, :password_confirmation)
-  end
+	def update
+		@user = User.find(params[:id])
+		if @user.update_attributes(user_params)
+			redirect_to @user, :flash => { :success => "Your profile was updated successfully!"}
+		else
+			@title = "Edit User"
+		render 'edit'
+		end
+	end
+	def user_params
+		params.require(:user).permit(:name, :email, :password, :password_confirmation)
+	end
 end

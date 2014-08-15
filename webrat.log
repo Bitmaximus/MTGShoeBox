@@ -2512,3 +2512,574 @@ D, [2014-08-14T23:08:35.398875 #10216] DEBUG -- : REQUESTING PAGE: POST /session
 D, [2014-08-14T23:08:35.961287 #10216] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/2706 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
 D, [2014-08-14T23:08:35.976296 #10216] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2706"}
 D, [2014-08-14T23:08:35.993293 #10216] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T00:58:48.601807 #7308] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T00:58:48.687868 #7308] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T00:58:48.718890 #7308] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T00:58:48.779932 #7308] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T00:58:49.064145 #7308] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/2911 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T00:58:49.085160 #7308] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T00:58:49.107175 #7308] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T00:58:49.430391 #7308] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T00:58:49.448404 #7308] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T00:58:50.013803 #7308] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/2912 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T00:58:50.051833 #7308] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2912"}
+D, [2014-08-15T00:58:50.055832 #7308] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T00:58:53.695408 #7308] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T00:58:53.717426 #7308] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T00:58:53.757455 #7308] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T00:58:53.774464 #7308] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T00:58:53.791480 #7308] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T00:58:53.810488 #7308] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T00:58:53.850520 #7308] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T00:58:53.931577 #7308] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T00:58:54.228790 #7308] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T00:58:54.246801 #7308] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T00:58:54.810185 #7308] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/2924 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T00:58:54.849212 #7308] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2924"}
+D, [2014-08-15T00:58:55.144433 #7308] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T00:58:55.162445 #7308] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T00:58:55.723828 #7308] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/2925 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T00:58:55.762868 #7308] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/2925"}
+D, [2014-08-15T01:07:37.285776 #10440] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:07:37.302797 #10440] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:07:37.340814 #10440] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:07:37.357826 #10440] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:07:37.374837 #10440] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:07:37.411882 #10440] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:07:37.431878 #10440] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:07:37.774119 #10440] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:07:37.792132 #10440] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:07:38.351539 #10440] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3046 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:07:38.368548 #10440] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3046"}
+D, [2014-08-15T01:07:38.684771 #10440] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:07:38.701782 #10440] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:07:39.258165 #10440] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3047 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:07:39.277192 #10440] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3047"}
+D, [2014-08-15T01:07:39.317217 #10440] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:07:55.611696 #10440] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:07:55.629710 #10440] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:07:56.191119 #10440] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3074 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:07:56.228145 #10440] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3074"}
+D, [2014-08-15T01:07:56.231148 #10440] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:07:56.248149 #10440] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:07:56.267171 #10440] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:07:56.313192 #10440] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:07:56.334206 #10440] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:07:56.623410 #10440] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3075 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T01:07:56.666450 #10440] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:07:56.686455 #10440] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:14:04.748722 #8964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:14:04.786749 #8964] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:14:04.802761 #8964] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:14:04.821774 #8964] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:14:04.859800 #8964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:14:04.875812 #8964] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:14:04.882817 #8964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:14:05.211072 #8964] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:05.268101 #8964] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:05.831486 #8964] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3091 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:14:05.847497 #8964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3091"}
+D, [2014-08-15T01:14:06.142718 #8964] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:06.183747 #8964] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:06.747132 #8964] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3092 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:14:06.763143 #8964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3092"}
+D, [2014-08-15T01:14:16.419952 #8964] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:16.426957 #8964] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:16.436964 #8964] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:16.471001 #8964] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:16.793228 #8964] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:16.812229 #8964] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:17.373624 #8964] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3104 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:14:17.391637 #8964] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3104"}
+D, [2014-08-15T01:14:17.394639 #8964] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:14:26.561120 #5068] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:26.648164 #5068] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:26.655182 #5068] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:26.735241 #5068] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:27.081470 #5068] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:27.099483 #5068] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:27.662880 #5068] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3105 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:14:27.700906 #5068] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3105"}
+D, [2014-08-15T01:14:27.703909 #5068] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:14:36.414051 #10128] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:36.500111 #10128] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:36.506115 #10128] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:36.582169 #10128] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:36.928413 #10128] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:36.947426 #10128] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:37.503819 #10128] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3106 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:14:37.541845 #10128] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3106"}
+D, [2014-08-15T01:14:37.544847 #10128] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:14:46.145914 #10256] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:46.229974 #10256] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:46.235978 #10256] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:46.316046 #10256] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:46.664279 #10256] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:46.683293 #10256] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:47.245690 #10256] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3107 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:14:47.285719 #10256] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3107"}
+D, [2014-08-15T01:14:47.288720 #10256] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:14:55.896802 #11724] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:55.981848 #11724] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:14:55.988853 #11724] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:56.067909 #11724] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:56.414153 #11724] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:14:56.432165 #11724] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:14:56.998565 #11724] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3108 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:14:57.036592 #11724] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3108"}
+D, [2014-08-15T01:14:57.039594 #11724] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:15:05.638658 #8868] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:05.721716 #8868] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:05.727720 #8868] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:05.810779 #8868] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:06.155022 #8868] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:06.173047 #8868] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:06.740435 #8868] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3109 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:15:06.776460 #8868] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3109"}
+D, [2014-08-15T01:15:06.779462 #8868] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:15:15.295530 #8776] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:15.376587 #8776] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:15.383579 #8776] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:15.455643 #8776] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:15.802889 #8776] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:15.819888 #8776] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:16.387288 #8776] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3110 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:15:16.425326 #8776] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3110"}
+D, [2014-08-15T01:15:16.428328 #8776] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:15:25.141496 #11068] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:25.226544 #11068] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:25.232547 #11068] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:25.313616 #11068] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:25.660861 #11068] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:25.679862 #11068] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:26.262272 #11068] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3111 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:15:26.302314 #11068] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3111"}
+D, [2014-08-15T01:15:26.306316 #11068] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:15:34.827312 #7472] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:34.911388 #7472] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:34.921379 #7472] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:34.998432 #7472] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:35.353683 #7472] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:35.371708 #7472] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:35.935106 #7472] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3112 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:15:35.975120 #7472] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3112"}
+D, [2014-08-15T01:15:35.978122 #7472] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:15:44.728302 #9432] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:44.810352 #9432] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:44.816356 #9432] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:44.892422 #9432] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:45.244670 #9432] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:45.264683 #9432] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:45.825081 #9432] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3113 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:15:45.863107 #9432] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3113"}
+D, [2014-08-15T01:15:45.867096 #9432] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:15:54.428146 #9280] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:54.511204 #9280] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:15:54.517208 #9280] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:54.593249 #9280] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:54.936491 #9280] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:15:54.954518 #9280] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:15:55.520905 #9280] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3114 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:15:55.559931 #9280] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3114"}
+D, [2014-08-15T01:15:55.562933 #9280] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:16:04.391193 #10896] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:04.474263 #10896] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:04.480272 #10896] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:04.555308 #10896] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:04.899551 #10896] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:04.922566 #10896] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:05.481978 #10896] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3115 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:16:05.519005 #10896] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3115"}
+D, [2014-08-15T01:16:05.522002 #10896] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:16:14.491360 #9768] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:14.627455 #9768] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:15.185854 #9768] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3116 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:16:15.208863 #9768] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3116"}
+D, [2014-08-15T01:16:15.229868 #9768] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:16:15.251882 #9768] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:15.277902 #9768] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:15.325935 #9768] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:15.339962 #9768] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:23.801950 #9820] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:23.884008 #9820] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:23.890012 #9820] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:23.964064 #9820] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:24.317314 #9820] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:24.336329 #9820] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:24.898724 #9820] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3117 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:16:24.936750 #9820] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3117"}
+D, [2014-08-15T01:16:24.939752 #9820] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:16:33.560865 #10720] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:33.644941 #10720] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:33.650928 #10720] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:33.727995 #10720] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:34.077241 #10720] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:34.096255 #10720] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:34.660653 #10720] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3118 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:16:34.699680 #10720] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3118"}
+D, [2014-08-15T01:16:34.702683 #10720] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:16:43.444834 #9020] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:43.534897 #9020] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:43.541902 #9020] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:43.619970 #9020] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:43.962209 #9020] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:43.981221 #9020] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:44.539606 #9020] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3119 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:16:44.581648 #9020] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3119"}
+D, [2014-08-15T01:16:44.585651 #9020] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:16:53.190719 #10936] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:53.354822 #10936] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:16:53.417878 #10936] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:16:53.464900 #10936] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:16:53.755105 #10936] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3120 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T01:16:53.778121 #10936] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:53.822152 #10936] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:54.122363 #10936] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:16:54.141376 #10936] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:16:54.718785 #10936] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3121 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:16:54.737814 #10936] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3121"}
+D, [2014-08-15T01:16:54.740816 #10936] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:17:15.765625 #9300] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:17:15.783638 #9300] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:17:15.822664 #9300] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:17:15.839678 #9300] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:17:15.855689 #9300] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:17:15.890722 #9300] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:17:15.909735 #9300] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:17:15.928741 #9300] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:17:16.251980 #9300] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:17:16.272995 #9300] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:17:16.863411 #9300] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3136 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:17:16.881413 #9300] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3136"}
+D, [2014-08-15T01:17:17.200636 #9300] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:17:17.219662 #9300] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:17:17.780057 #9300] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3137 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:17:17.797069 #9300] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3137"}
+D, [2014-08-15T01:17:22.058070 #9300] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:17:22.101093 #9300] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:17:22.131112 #9300] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:17:22.154129 #9300] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:17:22.440331 #9300] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3150 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T01:17:22.484366 #9300] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:17:22.503376 #9300] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:17:22.810593 #9300] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:17:22.851638 #9300] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:17:23.410028 #9300] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3151 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:17:23.427039 #9300] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3151"}
+D, [2014-08-15T01:17:23.430041 #9300] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:21:37.020753 #536] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:21:37.037753 #536] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:21:37.053777 #536] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:21:37.092804 #536] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:21:37.112820 #536] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:21:37.129831 #536] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:21:37.167844 #536] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:21:37.189872 #536] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:21:37.534104 #536] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:21:37.551128 #536] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:21:38.116526 #536] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3152 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:21:38.134526 #536] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3152"}
+D, [2014-08-15T01:21:38.485775 #536] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:21:38.507791 #536] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:21:39.064195 #536] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3153 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:21:39.081194 #536] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3153"}
+D, [2014-08-15T01:21:39.411441 #536] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:21:39.430452 #536] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:21:39.990848 #536] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3154 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:21:40.010862 #536] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3154"}
+D, [2014-08-15T01:21:49.133282 #7708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:21:49.150306 #7708] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:21:49.167305 #7708] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:21:49.196326 #7708] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:21:49.238369 #7708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:21:49.255368 #7708] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:21:49.331434 #7708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:21:49.718694 #7708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:21:49.754720 #7708] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:21:50.316117 #7708] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3155 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:21:50.333140 #7708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3155"}
+D, [2014-08-15T01:21:50.651364 #7708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:21:50.669365 #7708] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:21:51.231774 #7708] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3156 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:21:51.247785 #7708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3156"}
+D, [2014-08-15T01:21:51.565997 #7708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:21:51.584023 #7708] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:21:52.150422 #7708] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3157 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:21:52.166437 #7708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3157"}
+D, [2014-08-15T01:21:52.183445 #7708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:22:01.175858 #9684] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:22:01.192870 #9684] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:22:01.213883 #9684] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:22:01.229894 #9684] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:22:01.267934 #9684] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:22:01.285934 #9684] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:22:01.307949 #9684] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:22:01.366991 #9684] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:22:01.709247 #9684] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:22:01.728259 #9684] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:22:02.284639 #9684] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3158 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:22:02.305666 #9684] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3158"}
+D, [2014-08-15T01:22:02.622890 #9684] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:22:02.640902 #9684] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:22:03.204297 #9684] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3159 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:22:03.220308 #9684] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3159"}
+D, [2014-08-15T01:22:03.540524 #9684] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:22:03.558549 #9684] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:22:04.118945 #9684] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3160 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:22:04.134956 #9684] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3160"}
+D, [2014-08-15T01:22:13.511565 #11796] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:22:13.527578 #11796] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:22:13.564605 #11796] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:22:13.582618 #11796] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:22:13.602620 #11796] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:22:13.640659 #11796] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:22:13.660673 #11796] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:22:13.681685 #11796] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:22:14.028919 #11796] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:22:14.047933 #11796] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:22:14.606327 #11796] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3161 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:22:14.643365 #11796] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3161"}
+D, [2014-08-15T01:22:14.942565 #11796] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:22:14.960589 #11796] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:22:15.518985 #11796] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3162 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:22:15.558011 #11796] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3162"}
+D, [2014-08-15T01:22:15.874235 #11796] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:22:15.893247 #11796] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:22:16.454642 #11796] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3163 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:22:16.495672 #11796] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3163"}
+D, [2014-08-15T01:22:32.106668 #11796] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:22:32.147708 #11796] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:22:32.176716 #11796] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:22:32.198734 #11796] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:22:32.485947 #11796] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3190 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T01:22:32.533979 #11796] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:22:32.550989 #11796] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:22:32.871244 #11796] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:22:32.918239 #11796] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:22:33.479648 #11796] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3191 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:22:33.497662 #11796] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3191"}
+D, [2014-08-15T01:22:33.503664 #11796] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:31:08.830533 #7240] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:31:08.846542 #7240] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:31:08.884558 #7240] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:31:08.901569 #7240] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:31:08.918581 #7240] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:31:08.956609 #7240] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:31:08.976621 #7240] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:31:09.020653 #7240] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:31:09.355888 #7240] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:31:09.374902 #7240] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:31:09.935310 #7240] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3255 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:31:09.952319 #7240] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3255"}
+D, [2014-08-15T01:31:10.273547 #7240] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:31:10.291548 #7240] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:31:10.849942 #7240] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3256 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:31:10.865953 #7240] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3256"}
+D, [2014-08-15T01:31:11.186179 #7240] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:31:11.204205 #7240] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:31:11.764587 #7240] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3257 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:31:11.781599 #7240] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3257"}
+D, [2014-08-15T01:31:11.823628 #7240] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:31:11.844643 #7240] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:31:11.896680 #7240] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:31:11.916694 #7240] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:31:12.206899 #7240] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3258 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T01:31:12.226913 #7240] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:31:12.268943 #7240] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:31:12.575171 #7240] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:31:12.593184 #7240] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:31:13.153579 #7240] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3259 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:31:13.194595 #7240] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3259"}
+D, [2014-08-15T01:31:13.198614 #7240] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:38:49.188002 #10156] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:38:49.205026 #10156] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:38:49.222038 #10156] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:38:49.238037 #10156] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:38:49.277077 #10156] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:38:49.292085 #10156] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:38:49.311089 #10156] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:38:49.633316 #10156] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:38:49.652330 #10156] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:38:50.214726 #10156] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3400 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:38:50.230749 #10156] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3400"}
+D, [2014-08-15T01:38:50.550976 #10156] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:38:50.569986 #10156] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:38:51.128369 #10156] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3401 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:38:51.145395 #10156] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3401"}
+D, [2014-08-15T01:38:51.466609 #10156] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:38:51.484638 #10156] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:38:52.045016 #10156] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3402 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:38:52.061027 #10156] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3402"}
+D, [2014-08-15T01:38:52.101068 #10156] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:39:04.114526 #10156] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:39:04.132552 #10156] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:39:04.689933 #10156] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3417 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:39:04.706957 #10156] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3417"}
+D, [2014-08-15T01:39:04.710947 #10156] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:39:04.747974 #10156] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:39:04.765986 #10156] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:39:04.787002 #10156] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:39:04.830031 #10156] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:39:05.114244 #10156] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3418 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T01:39:05.134247 #10156] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:39:05.154272 #10156] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:43:11.147969 #10256] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:43:11.268067 #10256] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:43:11.851482 #10256] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3446 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:43:11.872498 #10256] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3446"}
+D, [2014-08-15T01:43:11.875500 #10256] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:43:11.894510 #10256] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:43:11.934536 #10256] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:43:11.959542 #10256] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:43:11.984559 #10256] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:43:12.271761 #10256] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3447 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T01:43:12.316806 #10256] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:43:12.337808 #10256] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:43:12.388844 #10256] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:43:12.408858 #10256] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:43:12.426871 #10256] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:43:12.445884 #10256] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:43:12.487927 #10256] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:43:12.505928 #10256] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:43:12.524942 #10256] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:43:12.979273 #10256] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:43:13.019288 #10256] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:43:13.576682 #10256] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3448 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:43:13.593693 #10256] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3448"}
+D, [2014-08-15T01:43:13.891905 #10256] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:43:13.937949 #10256] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:43:14.499332 #10256] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3449 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:43:14.516344 #10256] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3449"}
+D, [2014-08-15T01:43:14.819576 #10256] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:43:14.862589 #10256] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:43:15.421997 #10256] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3450 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:43:15.439004 #10256] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3450"}
+D, [2014-08-15T01:43:15.458018 #10256] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:47:22.793003 #11788] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:47:22.834033 #11788] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:47:22.887070 #11788] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T01:47:22.908085 #11788] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:47:23.192298 #11788] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3569 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T01:47:23.234315 #11788] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:47:23.254341 #11788] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:47:23.558545 #11788] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:47:23.598584 #11788] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:47:24.158980 #11788] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3570 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:47:24.176991 #11788] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3570"}
+D, [2014-08-15T01:47:24.179994 #11788] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T01:47:24.264053 #11788] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:47:24.281065 #11788] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:47:24.317088 #11788] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T01:47:24.336104 #11788] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T01:47:24.355105 #11788] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T01:47:24.390129 #11788] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T01:47:24.408155 #11788] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T01:47:24.505211 #11788] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T01:47:24.806437 #11788] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:47:24.847472 #11788] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:47:25.408847 #11788] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3571 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:47:25.425874 #11788] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3571"}
+D, [2014-08-15T01:47:25.726071 #11788] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:47:25.770115 #11788] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:47:26.329511 #11788] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3572 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:47:26.348524 #11788] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3572"}
+D, [2014-08-15T01:47:26.649724 #11788] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T01:47:26.691765 #11788] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T01:47:27.286171 #11788] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3573 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T01:47:27.302196 #11788] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3573"}
+D, [2014-08-15T02:01:22.403362 #11708] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T02:01:22.486419 #11708] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T02:01:22.515442 #11708] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T02:01:22.557459 #11708] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T02:01:22.844675 #11708] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3611 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T02:01:22.871694 #11708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:01:22.891707 #11708] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:01:23.214924 #11708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:01:23.232936 #11708] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:01:23.794332 #11708] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3612 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:01:23.811344 #11708] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3612"}
+D, [2014-08-15T02:01:23.814359 #11708] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T02:01:30.855310 #11708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T02:01:30.895339 #11708] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T02:01:30.914352 #11708] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T02:01:30.936380 #11708] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T02:01:30.953379 #11708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T02:01:30.999432 #11708] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T02:01:31.018426 #11708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T02:01:31.120510 #11708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T02:01:31.442738 #11708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:01:31.463753 #11708] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:01:32.027149 #11708] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3631 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:01:32.042160 #11708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3631"}
+D, [2014-08-15T02:01:32.368379 #11708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:01:32.389394 #11708] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:01:32.955793 #11708] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3632 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:01:32.975807 #11708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3632"}
+D, [2014-08-15T02:01:33.304038 #11708] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:01:33.323051 #11708] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:01:33.884446 #11708] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3633 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:01:33.902461 #11708] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3633"}
+D, [2014-08-15T02:22:07.611776 #10448] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T02:22:07.711838 #10448] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T02:22:07.790892 #10448] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T02:22:07.812907 #10448] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T02:22:08.105115 #10448] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3934 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T02:22:08.184171 #10448] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:22:08.205194 #10448] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:22:08.511401 #10448] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:22:08.567450 #10448] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:22:09.125846 #10448] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3935 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:22:09.149851 #10448] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3935"}
+D, [2014-08-15T02:22:09.154855 #10448] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
+D, [2014-08-15T02:22:16.533069 #10448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T02:22:16.560089 #10448] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T02:22:16.579101 #10448] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T02:22:16.598102 #10448] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T02:22:16.643135 #10448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T02:22:16.664149 #10448] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T02:22:16.687178 #10448] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T02:22:16.836284 #10448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T02:22:17.141499 #10448] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:22:17.185529 #10448] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:22:17.744924 #10448] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3954 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:22:17.761938 #10448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3954"}
+D, [2014-08-15T02:22:18.064154 #10448] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:22:18.105178 #10448] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:22:18.665562 #10448] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3955 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:22:18.682585 #10448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3955"}
+D, [2014-08-15T02:22:18.984787 #10448] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:22:19.041826 #10448] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:22:19.604223 #10448] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/3956 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:22:19.622234 #10448] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/3956"}
+D, [2014-08-15T02:28:59.505389 #9884] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T02:28:59.523393 #9884] DEBUG -- : REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T02:28:59.571425 #9884] DEBUG -- : REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+D, [2014-08-15T02:28:59.594442 #9884] DEBUG -- : REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+D, [2014-08-15T02:28:59.612454 #9884] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+D, [2014-08-15T02:28:59.672498 #9884] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-08-15T02:28:59.700516 #9884] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T02:28:59.732539 #9884] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-08-15T02:29:00.082787 #9884] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:29:00.101812 #9884] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:29:00.681223 #9884] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/4015 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:29:00.699235 #9884] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/4015"}
+D, [2014-08-15T02:29:00.996444 #9884] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:29:01.015457 #9884] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:29:01.594853 #9884] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/4016 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:29:01.610864 #9884] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/4016"}
+D, [2014-08-15T02:29:01.909087 #9884] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:29:01.926099 #9884] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:29:02.506507 #9884] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/4017 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:29:02.523519 #9884] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/4017"}
+D, [2014-08-15T02:29:20.251025 #9884] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T02:29:20.293054 #9884] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"", "email"=>"", "password"=>"", "password_confirmation"=>""}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T02:29:20.323076 #9884] DEBUG -- : REQUESTING PAGE: GET /signup with {} and HTTP headers {}
+D, [2014-08-15T02:29:20.366088 #9884] DEBUG -- : REQUESTING PAGE: POST /users with {"utf8"=>"✓", "user"=>{"name"=>"Example User", "email"=>"user@example.ca", "password"=>"foobar", "password_confirmation"=>"foobar"}, "commit"=>"Sign Up"} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+D, [2014-08-15T02:29:20.651303 #9884] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/4048 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+D, [2014-08-15T02:29:20.671316 #9884] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:29:20.689329 #9884] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:29:21.012545 #9884] DEBUG -- : REQUESTING PAGE: GET /signin with {} and HTTP headers {}
+D, [2014-08-15T02:29:21.029573 #9884] DEBUG -- : REQUESTING PAGE: POST /sessions with {"utf8"=>"✓", "session"=>{"email"=>"lspeirs@MTGShoeBox.com", "password"=>"foobar"}, "commit"=>"Sign In"} and HTTP headers {"HTTP_REFERER"=>"/signin"}
+D, [2014-08-15T02:29:21.591953 #9884] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/users/4049 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+D, [2014-08-15T02:29:21.608964 #9884] DEBUG -- : REQUESTING PAGE: GET /signout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/4049"}
+D, [2014-08-15T02:29:21.612968 #9884] DEBUG -- : REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/signout"}
