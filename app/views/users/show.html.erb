@@ -9,7 +9,6 @@
      <td class="sidebar round">
        <strong>Name</strong> <%= @user.name %>
        <strong>URL</strong> <%= link_to user_path(@user), user_path(@user) %>
-       <strong>Cookie</strong><%= cookies.signed[:remember_token] %>
      </td>
     </tr>
 </table>
