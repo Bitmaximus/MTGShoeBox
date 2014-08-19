@@ -22,8 +22,8 @@ class CreateCards < ActiveRecord::Migration
       t.string :cardSetId
       t.boolean :token
       t.boolean :promo
-      t.string rulings, array: true, default: []
-      t.string formats, array: true, default: []
+      t.string :rulings, array: true, default: []
+      t.string :formats, array: true, default: []
       t.date :releasedAt
 
       t.timestamps
