@@ -28,6 +28,7 @@
 	<% if card.manaCost =~ /(\d+)/%>
 		<%= image_tag("#{$1}.gif", alt: "#{$1}", size: '13x13', class: 'round' ) %>
 		<%   manacost = card.manaCost.tr('0-9X', '') %>
+		<%= raise "#{manacost}" %>
 	<% end %>
 	<% if !manacost.nil? and !manacost.empty? %>
 		<% manacost.split(//).each do |m| %>
