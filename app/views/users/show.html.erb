@@ -31,7 +31,7 @@
 	<% end %>
 	<% if !manacost.nil? and !manacost.empty? %>
 		<% manacost.split(//).each do |m| %>
-			<%= image_tag("#{m}.gif", alt: "#{m}", size: '13x13', class: 'round' ) %>
+			<%= image_tag("mtg#{m}.gif", alt: "mtg#{m}", size: '13x13', class: 'round' ) %>
 			<% end %>
 		<% end %>
 	<% end %>
