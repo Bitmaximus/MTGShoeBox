@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-
 	resources :users
+  resources :cards
 resources :sessions, :only => [:new, :create, :destroy]
   root :to => 'pages#home', via: :get
+  match '/cardlist', :to => 'cards#index', via: :get
   match '/contact', :to => 'pages#contact', via: :get
   match '/about', :to => 'pages#about', via: :get
   match '/help', :to => 'pages#help', via: :get

@@ -61,4 +61,5 @@ gem 'bootstrap'
 gem 'bcrypt'
 gem 'gravatar_image_tag'
 gem 'nokogiri'
-
+gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
+gem 'will_paginate'

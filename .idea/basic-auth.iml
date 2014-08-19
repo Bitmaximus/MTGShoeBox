@@ -255,6 +255,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tzinfo-data (v1.2014.5, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.5.3, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="webrat (v0.7.3, ruby-1.9.3-p545) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="will_paginate (v3.0.7, ruby-1.9.3-p545) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="xpath (v2.0.0, ruby-1.9.3-p545) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">

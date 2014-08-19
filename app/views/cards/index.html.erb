@@ -1,0 +1,48 @@
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.2/css/jquery.dataTables.css">
+
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.js"></script>
+<script>
+	$(document).ready( function () {
+		$('#cards_lists').DataTable(
+		);
+	} );
+	$('#cards_lists').dataTable( {
+		"serverSide": true
+	} );
+</script>
+
+<table id="cards_lists">
+  <thead>
+  <tr>
+	<th>Multiverse ID</th>
+	<th>Name</th>
+	<th>Type</th>
+	<th>Mana Cost</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%  Card.find_each do |card| %>
+	  <tr>
+		<td><%=  link_to "#{card.mId}", "http://api.mtgdb.info/content/hi_res_card_images/#{card.mId}.jpg" %> </td>
+		<td><%= card.name %> </td>
+		<td><%= card.mtgType%></td>
+		<td>
+		  <% if card.manaCost =~ /(\d+)/%>
+			  <%= image_tag("#{$1}.gif", alt: "#{$1}", size: '13x13', class: 'round' ) %>
+			  <%   manacost = card.manaCost.tr('0-9X', '') %>
+		  <% end %>
+		  <% if !manacost.nil? and !manacost.empty? %>
+			  <% manacost.split(//).each do |m| %>
+				  <%= image_tag("mtg#{m}.gif", alt: "mtg#{m}", size: '13x13', class: 'round' ) %>
+			  <% end %>
+		  <% end %>
+  <% end %>
+  </td>
+  </tr>
+  </tbody>
+</table>
