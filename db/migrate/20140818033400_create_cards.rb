@@ -8,7 +8,7 @@ class CreateCards < ActiveRecord::Migration
       t.string :searchName
       t.string :description
       t.string :flavor
-      t.string colors, array: true, default: []
+      t.string :colors, array: true, default: []
       t.string :manaCost
       t.integer :convertedManaCost
       t.string :cardSetName
