@@ -61,3 +61,4 @@ gem 'bootstrap'
 gem 'bcrypt'
 gem 'gravatar_image_tag'
 gem 'nokogiri'
+

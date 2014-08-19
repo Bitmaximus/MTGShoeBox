@@ -21,8 +21,8 @@
   </tr>
 <%  Card.where("id < 1000").find_each do |card| %>
 <tr>
-  <td><%= card.mId %></td>
-  <td><%= card.name %>
+  <td><%=  link_to "#{card.mId}", "http://api.mtgdb.info/content/hi_res_card_images/#{card.mId}.jpg" %> </td>
+  <td><%= card.name %> </td>
   <td><%= card.mtgType%></td>
   <td>
 	<% if card.manaCost =~ /(\d+)/%>
