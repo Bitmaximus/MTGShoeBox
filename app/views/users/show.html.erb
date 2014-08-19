@@ -12,3 +12,30 @@
      </td>
     </tr>
 </table>
+
+<table>
+  <tr>
+	<th>Multiverse ID</th>
+	<th>Name</th>
+	<th>Type</th>
+	<th>Mana Cost</th>
+  </tr>
+<%  Card.where("id < 1000").find_each do |card| %>
+<tr>
+  <td><%= card.mId %></td>
+  <td><%= card.name %>
+  <td><%= card.mtgType%></td>
+  <td>
+	<% if card.manaCost =~ /(\d+)/%>
+		<%= image_tag("#{$1}.gif", alt: "#{$1}", size: '13x13', class: 'round' ) %>
+		<%   manacost = card.manaCost.tr('0-9X', '') %>
+	<% end %>
+	<% if !manacost.nil? and !manacost.empty? %>
+		<% manacost.split(//).each do |m| %>
+			<%= image_tag("#{m}.gif", alt: "#{m}", size: '13x13', class: 'round' ) %>
+			<% end %>
+		<% end %>
+	<% end %>
+  </td>
+</tr>
+</table>

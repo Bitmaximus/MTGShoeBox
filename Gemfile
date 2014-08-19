@@ -48,6 +48,7 @@ gem "autotest-growl", "~> 0.2.16"
 gem "autotest-rails-pure", "~> 4.1.2"
 gem 'annotate'
 gem "factory_girl_rails", "~> 4.0"
+gem 'database_cleaner'
 end
 
 group :production do
@@ -59,3 +60,4 @@ gem 'pg'
 gem 'bootstrap'
 gem 'bcrypt'
 gem 'gravatar_image_tag'
+gem 'nokogiri'

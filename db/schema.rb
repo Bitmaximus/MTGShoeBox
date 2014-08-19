@@ -11,10 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140812152922) do
+ActiveRecord::Schema.define(version: 20140818215602) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cards", force: true do |t|
+    t.integer  "mId"
+    t.integer  "relatedCardId"
+    t.integer  "setNumber"
+    t.string   "name"
+    t.string   "searchName"
+    t.text     "description"
+    t.text     "flavor"
+    t.string   "colors",            default: [], array: true
+    t.string   "manaCost"
+    t.integer  "convertedManaCost"
+    t.string   "cardSetName"
+    t.string   "mtgType"
+    t.string   "subType"
+    t.integer  "power"
+    t.integer  "toughness"
+    t.integer  "loyalty"
+    t.string   "rarity"
+    t.string   "artist"
+    t.string   "cardSetId"
+    t.boolean  "token"
+    t.boolean  "promo"
+    t.date     "releasedAt"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -22,6 +49,7 @@ ActiveRecord::Schema.define(version: 20140812152922) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"
+    t.boolean  "admin",           default: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

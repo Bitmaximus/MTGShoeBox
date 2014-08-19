@@ -8,10 +8,6 @@ describe UsersController do
 			@user = FactoryGirl.create(:user)
 		end
 
-		after(:each) do
-			@user.destroy
-		end
-
 		it "Should be succesful" do
 			get :show, :id => @user.id
 			response.should be_success
@@ -154,5 +150,14 @@ describe UsersController do
 				flash[:success].should =~ /updated/i
 			end
 		end
+		# describe "authentication of edit/update actions" do
+		# 	before(:each) do
+		# 		@user = FactoryGirl.create(:user, :email => "unusedemail@djd.com")
+		# 	end
+		# 	it "should deny access to 'edit'" do
+		# 		get :edit, :id => @user
+		# 		response.should redirect_to(signin_path)
+		# 	end
+		# end
 	end
 end
