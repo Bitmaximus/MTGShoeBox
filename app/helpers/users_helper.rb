@@ -4,8 +4,6 @@ module UsersHelper
 	end
 
 	def fetchcardsintodb
-		$magic = "http://api.mtgdb.info/cards/"
-		response = Net::HTTP.get_response(URI.parse($magic))
 		data = begin IO.read('public/cards.json') rescue "" end
 		arr = JSON.parse(data, opts = {:symbolize_names => true}    )
 		arr[0,1000].each do |hash|
