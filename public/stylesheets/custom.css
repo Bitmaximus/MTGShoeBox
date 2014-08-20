@@ -178,3 +178,15 @@ div.field, div.actions {
     font-size: 12px;
     list-style: square;
 }
+
+.hover_img a { position:relative; left: 50%; }
+.hover_img a span { position:absolute; display:none; z-index:99; }
+.hover_img a:hover span { display:block}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -230px;
+    margin-left: -230px;
+}

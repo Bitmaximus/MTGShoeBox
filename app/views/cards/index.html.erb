@@ -1,48 +1,64 @@
 <!-- DataTables CSS -->
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.2/css/jquery.dataTables.css">
-
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/colvis/1.1.1/css/dataTables.colVis.css">
 <!-- jQuery -->
 <script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 
 <!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/colvis/1.1.1/js/dataTables.colVis.min.js"></script>
+
+
 <script>
-	$(document).ready( function () {
-		$('#cards_lists').DataTable(
-		);
-	} );
-	$('#cards_lists').dataTable( {
-		"serverSide": true
+	$(document).ready(function() {
+		$('#cards_lists').DataTable( {
+			"dom": 'C<"clear">lfrtip',
+			"colVis": {
+				"buttonText": "Change columns"
+			}
+		} );
 	} );
 </script>
-
 <table id="cards_lists">
   <thead>
   <tr>
-	<th>Multiverse ID</th>
+	<th>MVID</th>
 	<th>Name</th>
 	<th>Type</th>
+	<th>CMC</th>
+	<th>Power</th>
+	<th>Toughness</th>
 	<th>Mana Cost</th>
+	<th>Rarity</th>
   </tr>
   </thead>
   <tbody>
-  <%  Card.where("id < 5000").find_each do |card| %>
+  <%  fetcharray[0,999].each do |hash| %>
 	  <tr>
-		<td><%=  link_to "#{card.mId}", "http://api.mtgdb.info/content/hi_res_card_images/#{card.mId}.jpg" %> </td>
-		<td><%= card.name %> </td>
-		<td><%= card.mtgType%></td>
+		<td><div class="hover_img">
+		  <a href=<%= "http://api.mtgdb.info/content/hi_res_card_images/#{hash[:id]}.jpg" %>><%= hash[:id]%><span class="centered"><img src=<%= "http://api.mtgdb.info/content/hi_res_card_images/#{hash[:id]}.jpg"%>  alt="image" height="250" /></span></a>
+		</div></td>
+		<td><%= hash[:name] %>
+		<td><%= hash[:type]%></td>
+		<td><%= hash[:convertedManaCost]%></td>
+		<td><%= hash[:power]%></td>
+		<td><%= hash[:toughness]%></td>
+
 		<td>
-		  <% if card.manaCost =~ /(\d+)/%>
+		  <% if hash[:manaCost].to_s =~ /(\d+)/%>
 			  <%= image_tag("#{$1}.gif", alt: "#{$1}", size: '13x13', class: 'round' ) %>
-			  <%   manacost = card.manaCost.tr('0-9X', '') %>
+			  <%   manacost = hash[:manaCost].to_s.tr('0-9X', '') %>
 		  <% end %>
 		  <% if !manacost.nil? and !manacost.empty? %>
 			  <% manacost.split(//).each do |m| %>
-				  <%= image_tag("mtg#{m}.gif", alt: "mtg#{m}", size: '13x13', class: 'round' ) %>
+				  <%= image_tag("mtg#{m}.gif", alt: "mtg{m}", size: '13x13', class: 'round' ) %>
 			  <% end %>
 		  <% end %>
+		</td>
+		<td><%= hash[:rarity]%></td>
   <% end %>
-  </td>
+
   </tr>
   </tbody>
 </table>
