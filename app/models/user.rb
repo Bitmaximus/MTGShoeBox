@@ -12,7 +12,7 @@
 #
 
 class User < ActiveRecord::Base
-
+has_many :cards, dependent: :destroy
 	has_secure_password
 	validates :name,  presence: true,
 	                  length: { maximum: 50 }
