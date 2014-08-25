@@ -1,28 +1,7 @@
-<!-- DataTables CSS -->
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/colvis/1.1.1/css/dataTables.colVis.css">
-<!-- jQuery -->
-<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-
-<!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-
-<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/colvis/1.1.1/js/dataTables.colVis.min.js"></script>
-
-
-<script>
-	$(document).ready(function() {
-		$('#cards_lists').DataTable( {
-			"dom": 'C<"clear">lfrtip',
-			"colVis": {
-				"buttonText": "Change columns"
-			}
-		} );
-	} );
-</script>
-<table id="cards_lists">
+<table id="cards_list" class="display">
   <thead>
   <tr>
+	<th>Add</th>
 	<th>MVID</th>
 	<th>Name</th>
 	<th>Type</th>
@@ -36,6 +15,7 @@
   <tbody>
   <%  fetcharray[0,999].each do |hash| %>
 	  <tr>
+		<td><%= link_to "Add Card", {:controller => "cards", :action => "create",  :mId => hash[:id], :relatedCardId => hash[:relatedCardId], :setNumber => hash[:setNumber], :name => hash[:name], :searchName => hash[:searchName], :description => hash[:description], :flavor => hash[:flavor], :colors => hash[:colors], :manaCost => hash[:manaCost], :convertedManaCost => hash[:convertedManaCost], :cardSetName => hash[:cardSetName], :mtgType => hash[:type], :subType => hash[:subType], :power => hash[:power],  :toughness => hash[:toughness], :loyalty => hash[:loyalty], :rarity => hash[:rarity], :artist => hash[:artist], :cardSetId =>  hash[:cardSetId], :token => hash[:token], :promo => hash[:promo], :releasedAt => hash[:releasedAt], :user_id => current_user}, :remote => true, :method => :post %></td>
 		<td><div class="hover_img">
 		  <a href=<%= "http://api.mtgdb.info/content/hi_res_card_images/#{hash[:id]}.jpg" %>><%= hash[:id]%><span class="centered"><img src=<%= "http://api.mtgdb.info/content/hi_res_card_images/#{hash[:id]}.jpg"%>  alt="image" height="250" /></span></a>
 		</div></td>
@@ -48,8 +28,8 @@
 		<td>
 		  <% if hash[:manaCost].to_s =~ /(\d+)/%>
 			  <%= image_tag("#{$1}.gif", alt: "#{$1}", size: '13x13', class: 'round' ) %>
-			  <%   manacost = hash[:manaCost].to_s.tr('0-9X', '') %>
 		  <% end %>
+		  <%   manacost = hash[:manaCost].to_s.tr('0-9X', '') %>
 		  <% if !manacost.nil? and !manacost.empty? %>
 			  <% manacost.split(//).each do |m| %>
 				  <%= image_tag("mtg#{m}.gif", alt: "mtg{m}", size: '13x13', class: 'round' ) %>

@@ -12,3 +12,46 @@
      </td>
     </tr>
 </table>
+
+<table id="cards_list" class="display">
+  <thead>
+  <tr>
+	<th>MVID</th>
+	<th>Name</th>
+	<th>Type</th>
+	<th>CMC</th>
+	<th>Power</th>
+	<th>Toughness</th>
+	<th>Mana Cost</th>
+	<th>Rarity</th>
+  </tr>
+  </thead>
+  <tbody>
+  <%  current_user.cards.each do |hash| %>
+	  <tr>
+		<td><div class="hover_img">
+		  <a href=<%= "http://api.mtgdb.info/content/hi_res_card_images/#{hash.mId}.jpg" %>><%= hash.mId%><span class="centered"><img src=<%= "http://api.mtgdb.info/content/hi_res_card_images/#{hash.mId}.jpg"%>  alt="image" height="250" /></span></a>
+		</div></td>
+		<td><%= hash.name %>
+		<td><%= hash.mtgType%></td>
+		<td><%= hash.convertedManaCost%></td>
+		<td><%= hash.power%></td>
+		<td><%= hash.toughness %></td>
+
+		<td>
+		  <% if hash.manaCost.to_s =~ /(\d+)/%>
+			  <%= image_tag("#{$1}.gif", alt: "#{$1}", size: '13x13', class: 'round' ) %>
+		  <% end %>
+		  <%   manacost = hash[:manaCost].to_s.tr('0-9X', '') %>
+		  <% if !manacost.nil? and !manacost.empty? %>
+			  <% manacost.split(//).each do |m| %>
+				  <%= image_tag("mtg#{m}.gif", alt: "mtg{m}", size: '13x13', class: 'round' ) %>
+			  <% end %>
+		  <% end %>
+		</td>
+		<td><%= hash.rarity	%></td>
+  <% end %>
+
+  </tr>
+  </tbody>
+</table>
